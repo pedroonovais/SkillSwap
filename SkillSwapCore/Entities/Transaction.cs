@@ -1,11 +1,7 @@
-﻿namespace SkillSwapCore.Entities
+﻿using SkillSwapCommon.Enums;
+
+namespace SkillSwapCore.Entities
 {
-    public enum TransactionStatus
-    {
-        Pending,
-        Completed,
-        Cancelled
-    }
 
     public class Transaction
     {
@@ -17,7 +13,7 @@
         public DateTime RequestedAt { get; set; }
         public DateTime? CompletedAt { get; set; }
         public TransactionStatus Status { get; set; }
-
+        public int CreditValue { get; set; }
         public required Skill Skill { get; set; }
         public required User FromUser { get; set; }
         public required User ToUser { get; set; }
