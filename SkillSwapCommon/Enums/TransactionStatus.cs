@@ -8,8 +8,8 @@ namespace SkillSwapCommon.Enums
 {
     public enum TransactionStatus
     {
-        Pending,
-        Completed,
-        Canceled
+        Pending = 0,
+        Completed = 1,
+        Canceled = 2
     }
 }
